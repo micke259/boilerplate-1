@@ -1,0 +1,35 @@
+.menu {	
+	&Items {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		padding: 0 20px;
+	}
+
+	&Paragraph {
+		margin-right: 20px;
+		cursor: pointer;
+		&:nth-last-child(2) {
+				margin-right: auto;
+			}
+		&:last-child{
+			margin-right: 55px;
+			margin-left: 5px;
+			font-weight: bold;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.menu {
+		&Paragraph {
+			display: none;
+			&:nth-child(7){
+				display: block;
+			}
+			&:nth-child(6) {
+				display: flex;
+			}
+		}
+	}
+}

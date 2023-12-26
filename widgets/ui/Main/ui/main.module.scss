@@ -1,0 +1,79 @@
+@import '../../../../shared/ui/media-queries.scss';
+
+.top{
+	background-image: url(/background.svg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: cover;
+
+	&__inner{
+		min-height: 500px;
+		color:#fff;
+		font-family: 'Cormorant', serif;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		@include responsive(360px){
+			min-height: 367px;
+		}
+	}
+	&__title{
+		font-size: 60px;
+		margin-bottom: 20px;
+		max-width: 780px;
+		line-height: 1;
+		font-weight: 400;
+		@include responsive(680px) {
+			font-size: 40px;
+			line-height: normal;
+		}
+		@include responsive(360px){
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+	}
+	&__text{
+		font-size: 24px;
+		margin-bottom: 48px;
+		max-width: 560px;
+		line-height: normal;
+		@include responsive(360px){
+			font-size: 13px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.blockquote__text{
+	text-align: center;
+	font-family: 'Cormorant',serif;
+	font-size: 40px;
+	font-style: italic;
+	line-height: normal;
+	max-width: 704px;
+	margin: 150px auto;
+	@include responsive(1000px){
+		margin-top: 120px;
+		margin-bottom: 135px;
+	}
+	@include responsive(768px){
+		max-width: 640px;
+	}
+	@include responsive(680px){
+		font-size: 16px;
+		min-width: 376px;
+		margin:60px 0;
+	}
+	@include responsive(360px){
+		min-width: 340px;
+		margin-top: 70px;
+		margin-bottom: 80px;
+	}
+}
+.container{
+	margin-left: 200px;
+	@include responsive(1000px){
+		margin-left: 19px;
+	}
+}
